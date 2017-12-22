@@ -1,0 +1,30 @@
+{
+  "name": "react-mobile-ui",
+  "author": "lxq",
+  "version": "1.0.0",
+  "description": "An awesome project",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LXuanQing/react-mobile-ui.git"
+  },
+  "scripts": {
+    "start": "nowa server",
+    "build": "nowa build"
+  },
+  "homepage": "",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "rc-dialog": "^7.0.4",
+    "react-router-dom": "^4.2.2",
+    "salt-icon": "^3.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-import": "^1.6.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "nowa-server": "^1.19.0"
+  }
+}

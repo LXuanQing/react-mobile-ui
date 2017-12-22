@@ -1,0 +1,43 @@
+// flexbox horizontal && flexbox vertical
+.liu-FBH, .liu-FBV {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+// flexbox vertical
+.liu-FBV {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+// cross axis's align center
+.liu-FBAC {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+// cross axis's align start
+.liu-FBAS {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.liu-FBH {
+    > .liu-FB1, > .liu-FB2, > .liu-FB3 {
+        width: 0;
+    }
+}
+
+.liu-FB1 {
+    -webkit-box-flex: 1;
+    flex: 1 1 0%;
+}
+.liu-FAC {
+    text-align: center;
+}
+.liu-PR {
+    position: relative;
+}

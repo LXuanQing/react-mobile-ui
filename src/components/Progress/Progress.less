@@ -1,0 +1,54 @@
+.liu-progress {
+    position: relative;
+    height: 12px;
+    padding-top: 2px;
+
+    &.with-label {
+        padding-right: 40px;
+        .bar-label {
+            display: block;
+        }
+    } 
+}
+
+.liu-progress .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    .bar-core {
+        width: 80%;
+        height: 8px;
+        background-color: rgb(60, 153, 216);
+        transition: width 0.2s;
+        border-radius: 5px;
+    }
+    &.blue-bar {
+        .bar-core {
+            background-color: blue;
+        }
+    }
+    &.green-bar {
+        .bar-core {
+            background-color:#66bc5c;
+        }
+    }   
+    
+    &.red-bar {
+        .bar-core {
+            background-color: red;
+        }
+    }
+}
+
+.liu-progress .bar-label {
+    display:none;
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    color: #999999;
+    font-size: 12px;
+    line-height: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

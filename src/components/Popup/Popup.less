@@ -1,0 +1,205 @@
+.t-popup-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+.t-popup {
+    position: fixed;
+    display: inline-block;
+    background-color: white;
+    z-index: 1010;
+}
+.t-popup-slide-down {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.t-popup-slide-up {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.t-popup-slide-left {
+    top: 0;
+    right: 0;
+    bottom :0;
+}
+.t-popup-slide-right {
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.t-popup-hidden,
+.t-popup-close {
+    display: none;
+}
+
+@keyframes popupSlideUpIn {
+    0% {
+        transform :translate(0, 100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes popupSlideUpOut {
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    100% {
+        transform: translate(0, 100%);
+    }
+}
+
+.t-popup-slide-up-enter,
+.t-popup-slide-up-appear {
+    transform: translate(0, 100%);
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+.t-popup-slide-up-enter-active,
+.t-popup-slide-up-appear-active {
+    animation-name: popupSlideUpIn;
+}
+
+.t-popup-slide-up-leave {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.t-popup-slide-up-leave-active {
+    animation-name: popupSlideUpOut;
+}
+
+    
+@keyframes popupSlideDownIn {
+    0% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes popupSlideDownOut {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, -100%);
+    }
+}
+.t-popup-slide-down-enter,
+.t-popup-slide-down-appear {
+    transform: translate(0, -100%);
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}   
+   
+.t-popup-slide-down-enter-active,
+.t-popup-slide-down-appear-active {
+    animation-name: popupSlideDownIn;
+}
+   
+.t-popup-slide-down-leave {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+  
+.t-popup-slide-down-leave-active {
+    animation-name: popupSlideDownOut;
+}
+   
+
+@keyframes popupSlideLeftIn {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes popupSlideLeftOut {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+.t-popup-slide-left-enter,
+.t-popup-slide-left-appear {
+    transform: translate(100%, 0);
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+.t-popup-slide-left-enter-active,
+.t-popup-slide-left-appear-active {
+    animation-name: popupSlideLeftIn;
+}
+
+.t-popup-slide-left-leave {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.t-popup-slide-left-leave-active {
+    animation-name: popupSlideLeftOut;
+}
+
+
+@keyframes popupSlideRightIn {
+    0% {
+        transform: translate(-100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes popupSlideRightOut {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+.t-popup-slide-right-enter,
+.t-popup-slide-right-appear {
+    transform: translate(-100%, 0);
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+    
+.t-popup-slide-right-enter-active,
+.t-popup-slide-right-appear-active {
+    animation-name: popupSlideRightIn;
+}
+   
+.t-popup-slide-right-leave {
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+.t-popup-slide-right-leave-active {
+    animation-name: popupSlideRightOut;
+}
+    
+    

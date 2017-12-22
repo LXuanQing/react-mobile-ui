@@ -1,0 +1,63 @@
+.liu-switch {
+    display: block;
+    pointer-events: auto;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    float: right;
+}
+.liu-switch.active {
+    .liu-switch-back {
+        border-color: #38adff;
+        background-color: #38adff;
+    }
+    .liu-switch-radius {
+        -webkit-transform: translate3d(20px, 0, 0);
+        transform: translate3d(20px, 0, 0);
+        background-color: #fff;
+    }
+}
+
+.liu-switch-radius {
+    -webkit-transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
+    -o-transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
+    transition :0.3s cubic-bezier(0, 1.1, 1, 1.1);
+    background-color: white;
+    border-radius: 40px;
+    display: block;
+    height: 24px;
+    left: 2px;
+    position: absolute;
+    top: 3px;
+    width: 24px;
+}
+
+.liu-switch-back {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(31,56,88,.2);
+    border-radius: 40px;
+    box-sizing: border-box;
+    content: ' ';
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    pointer-events: none;
+    width: 48px;
+    -webkit-background-clip: padding-box;
+}
+
+
+.liu-switch.readOnly {
+    .liu-switch-back {
+        background-color: rgba(31,56,88,.06);
+    }
+    
+    .liu-switch-radius {
+        background-color: rgba(31,56,88,.1);
+    } 
+}
